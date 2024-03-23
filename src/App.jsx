@@ -37,7 +37,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="container">
       <Description />
       <Options
         updateFeedback={updateFeedback}
@@ -52,7 +52,7 @@ function App() {
         />
       )}
       {totalFeedback === 0 && <Notification />}
-    </>
+    </div>
   );
 }
 
